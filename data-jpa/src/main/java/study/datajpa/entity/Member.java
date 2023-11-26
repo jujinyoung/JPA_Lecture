@@ -13,7 +13,7 @@ import javax.persistence.*;
 )
 @ToString(of = {"id", "username", "age"})
 //@NamedEntityGraph(name = "Member.all", attributeNodes = @NamedAttributeNode("team"))
-public class Member {
+public class Member extends BaseEntity{
 
     @Id @GeneratedValue
     @Column(name = "member_id")
